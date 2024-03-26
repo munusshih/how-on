@@ -1,14 +1,12 @@
 ---
-title: This is my first
-description: Capitalize on low hanging fruit to identify a ballpark value added
-  activity to beta test. Override the digital divide with additional
-  clickthroughs from DevOps.
+title: 12/24 教學記錄
+description: 很開心的教學
 author: Surjith S M
 date: 2020-09-01
 tags:
   - created
 ---
-# This is a Heading h1
+![](/static/img/icon.svg)
 
 ## This is a Heading h2
 

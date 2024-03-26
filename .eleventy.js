@@ -17,6 +17,10 @@ module.exports = function (eleventyConfig) {
     );
   });
 
+  eleventyConfig.addNunjucksShortcode("youtube", function (youtubeId, aspectRatio) {
+    return `<div class="aspect-ratio" style="--aspect-ratio: ${aspectRatio}"><iframe class="youtube-player video video--youtube" src="https://www.youtube.com/embed/${youtubeId}/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+  });
+
   // Syntax Highlighting for Code blocks
   eleventyConfig.addPlugin(syntaxHighlight);
 

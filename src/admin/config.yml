@@ -12,6 +12,31 @@ public_folder: "/static/img"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
+  - label: "First Section"
+    name: "happy"
+    folder: "src/happy"
+    create: true
+    editor:
+      preview: true
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "select"
+        options:
+          - { label: "Chicago", value: "ORD" }
+          - { label: "Paris", value: "CDG" }
+          - { label: "Tokyo", value: "HND" }
+      - { label: 'Color', name: 'color', widget: 'color' }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Image", name: "thumbnail", widget: "image"}
+      - widget: select
+        label: "tags"
+        name: "tags"
+        multiple: true
+        create: true
+        options: ["Tags", "created", "from", "config.yml"]
   - label: "Blog"
     name: "blog"
     folder: "src/posts"
